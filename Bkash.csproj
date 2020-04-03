@@ -1,0 +1,205 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{70B5A877-A9C8-4053-9129-3894EDEABAD9}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Bkash</RootNamespace>
+    <AssemblyName>Bkash</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Add Friend.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Add Friend.Designer.cs">
+      <DependentUpon>Add Friend.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Bill Sharing.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Bill Sharing.Designer.cs">
+      <DependentUpon>Bill Sharing.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Budget Money.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Budget Money.Designer.cs">
+      <DependentUpon>Budget Money.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Change budjet.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Change budjet.Designer.cs">
+      <DependentUpon>Change budjet.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Check Balance.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Check Balance.Designer.cs">
+      <DependentUpon>Check Balance.cs</DependentUpon>
+    </Compile>
+    <Compile Include="electric bill.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="electric bill.Designer.cs">
+      <DependentUpon>electric bill.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LoginPage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LoginPage.Designer.cs">
+      <DependentUpon>LoginPage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Homepage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Homepage.Designer.cs">
+      <DependentUpon>Homepage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Recharge.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Recharge.Designer.cs">
+      <DependentUpon>Recharge.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Registration.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Registration.Designer.cs">
+      <DependentUpon>Registration.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Request Money.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Request Money.Designer.cs">
+      <DependentUpon>Request Money.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Send Money.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Send Money.Designer.cs">
+      <DependentUpon>Send Money.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Utility Bills.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Utility Bills.Designer.cs">
+      <DependentUpon>Utility Bills.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Water bill.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Water bill.Designer.cs">
+      <DependentUpon>Water bill.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Add Friend.resx">
+      <DependentUpon>Add Friend.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Bill Sharing.resx">
+      <DependentUpon>Bill Sharing.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Budget Money.resx">
+      <DependentUpon>Budget Money.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Change budjet.resx">
+      <DependentUpon>Change budjet.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Check Balance.resx">
+      <DependentUpon>Check Balance.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="electric bill.resx">
+      <DependentUpon>electric bill.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LoginPage.resx">
+      <DependentUpon>LoginPage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Homepage.resx">
+      <DependentUpon>Homepage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Recharge.resx">
+      <DependentUpon>Recharge.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Registration.resx">
+      <DependentUpon>Registration.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Request Money.resx">
+      <DependentUpon>Request Money.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Send Money.resx">
+      <DependentUpon>Send Money.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Utility Bills.resx">
+      <DependentUpon>Utility Bills.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Water bill.resx">
+      <DependentUpon>Water bill.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
